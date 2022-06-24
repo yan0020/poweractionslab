@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{b67c40bd-a43a-4498-95d4-fb6fe85539fa}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="crd4b_name" select="1" icon="1" preview="1">
+        <row name="result" id="crd4b_timeoffrequestid">
+          <cell name="crd4b_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="crd4b_timeoffrequest">
+          <attribute name="crd4b_timeoffrequestid" />
+          <attribute name="crd4b_name" />
+          <attribute name="createdon" />
+          <order attribute="crd4b_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Time Off Request" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
